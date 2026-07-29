@@ -1,0 +1,16 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.ContinuityQuestionsModulusContinuitySemicontinuityTheoremCanonicalLaneLean.ContinuityQuestionsBridge
+import HautevilleHouse.ContinuityQuestionsModulusContinuitySemicontinuityTheoremCanonicalLaneLean.ContinuityQuestionsGate
+
+namespace HautevilleHouse
+namespace ContinuityQuestionsModulusContinuitySemicontinuityTheoremCanonicalLaneLean
+
+def ConstrainedContinuityClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_continuity_endgame (A : AdmissibleClass) :
+    ConstrainedContinuityClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end ContinuityQuestionsModulusContinuitySemicontinuityTheoremCanonicalLaneLean
+end HautevilleHouse

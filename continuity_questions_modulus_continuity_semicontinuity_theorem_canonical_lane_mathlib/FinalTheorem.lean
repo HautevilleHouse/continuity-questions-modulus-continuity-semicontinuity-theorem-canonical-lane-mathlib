@@ -1,0 +1,9 @@
+import continuity_questions_modulus_continuity_semicontinuity_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace continuity_questions_modulus_continuity_semicontinuity_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end continuity_questions_modulus_continuity_semicontinuity_theorem_canonical_lane_mathlib
+end HautevilleHouse
